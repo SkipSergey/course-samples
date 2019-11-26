@@ -35,7 +35,8 @@ namespace Stage1.chapter3
         public void CarTest()
         {
             Transport car = new Car("AC/DC", "Carbon", 20);
-            Assert.That(car.Move(), Is.EqualTo("Автомобиль едит из города А в город Б"));
+            car.Move();
+            car.Reparing();
         }
 
         static void Main()
